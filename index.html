@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prathibha | Portfolio</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, indigo, #4B0082, #9370DB);
+    color: white;
+  }
+  nav {
+    background: rgba(0,0,0,0.4);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from { text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; }
+    to { text-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700; }
+  }
+  nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #FFD700;
+  }
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1581090700227-4c4d50a01d5b');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero p {
+    font-size: 1.5rem;
+  }
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 900px;
+  }
+  .project-card {
+    background: rgba(0,0,0,0.4);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 250px;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    text-align: center;
+  }
+  .project-card:hover {
+    transform: scale(1.05);
+    background: rgba(0,0,0,0.6);
+  }
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  .btn {
+    padding: 0.8rem 2rem;
+    background: #4B0082;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn:hover {
+    background: #9370DB;
+  }
+  footer {
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Prathibha's Portfolio</div>
+  <div>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="contact.html">Contact</a>
+    <a href="./Resume original.pdf" download class="btn">Download My Resume</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Prathibha</h1>
+  <p>Software Developer | Full Stack Developer </p>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Mentor Connect</h3>
+      <p>A platform connecting mentors and mentees</p>
+    </div>
+    <div class="project-card">
+      <h3>Msg Pedia</h3>
+      <p>Message-based information application</p>
+    </div>
+    <div class="project-card">
+      <h3>Snake Game</h3>
+      <p>Classic Snake game using Python Turtle</p>
+    </div>
+    <div class="project-card">
+      <h3>Covid-19 Vaccine Analysis</h3>
+      <p>Data analysis on vaccine distribution</p>
+    </div>
+    <div class="project-card">
+      <h3>Turtle Crossing Road</h3>
+      <p>Fun road crossing game with Python</p>
+    </div>
+    <div class="project-card">
+      <h3>Automatic Mail Generation</h3>
+      <p>Automated email sender using Python</p>
+    </div>
+  </div>
+
+  <a href="about.html" class="btn">Explore More</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 Prathibha. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
