@@ -10,7 +10,18 @@ body {
   font-family: Arial, sans-serif;
   padding: 2rem;
   text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 h1 {
   margin-bottom: 2rem;
@@ -50,12 +61,24 @@ a {
   color: #FFD700;
   display: inline-block;
   margin-top: 2rem;
+  margin-bottom: 0; /* remove extra bottom spacing */
   text-decoration: none;
   transition: color 0.3s;
 }
 
 a:hover {
   color: white;
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 600px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding: 1.5rem 1rem 0.5rem 1rem; /* further reduce bottom padding */
+  }
 }
 </style>
 </head>
@@ -92,7 +115,7 @@ a:hover {
   <div class="skill-box">
     <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Soft Skills">
     <h3>Soft Skills</h3>
-    <p>Communication, Teamwork,Leadership</p>
+    <p>Communication, Teamwork, Leadership</p>
   </div>
 
 </div>
@@ -101,5 +124,6 @@ a:hover {
 
 </body>
 </html>
+
 
 
